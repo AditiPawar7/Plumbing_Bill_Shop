@@ -1,0 +1,26 @@
+:root{--purple:#6f42c1;--purple-dark:#4b2a8f;--purple-soft:#f1ecfb}
+body{background:#f6f4fb;font-family:"Segoe UI",system-ui,sans-serif}
+.sidebar{position:fixed;top:0;left:0;bottom:0;width:240px;background:linear-gradient(180deg,#6f42c1,#4b2a8f);color:#fff;overflow-y:auto;z-index:1030;transition:transform .2s}
+.sidebar .brand{padding:18px 16px;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(255,255,255,.15)}
+.sidebar .nav-link{color:rgba(255,255,255,.85);padding:10px 18px;border-left:3px solid transparent}
+.sidebar .nav-link i{margin-right:8px}
+.sidebar .nav-link:hover,.sidebar .nav-link.active{background:rgba(255,255,255,.14);color:#fff;border-left-color:#fff}
+.sidebar .nav-title{padding:14px 18px 4px;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;opacity:.6}
+.main{margin-left:240px;min-height:100vh}
+.topbar{height:60px;background:#fff;border-bottom:1px solid #e5def5;position:sticky;top:0;z-index:1020}
+.card{border:0;box-shadow:0 2px 8px rgba(75,42,143,.08);border-radius:10px}
+.card-header{background:#fff;border-bottom:1px solid #eee;font-weight:600;color:var(--purple-dark)}
+.btn-purple{background:var(--purple);color:#fff;border-color:var(--purple)}
+.btn-purple:hover{background:var(--purple-dark);color:#fff}
+.btn-outline-purple{color:var(--purple);border-color:var(--purple)}
+.btn-outline-purple:hover{background:var(--purple);color:#fff}
+.bg-purple{background:var(--purple)!important}
+.table thead th{background:var(--purple-soft);color:var(--purple-dark);white-space:nowrap}
+.stat-card{border-left:5px solid var(--purple)}
+.stat-card .num{font-size:1.7rem;font-weight:700;color:var(--purple-dark)}
+.stat-card i{font-size:2rem;color:var(--purple);opacity:.35}
+.form-control:focus,.form-select:focus{border-color:var(--purple);box-shadow:0 0 0 .2rem rgba(111,66,193,.2)}
+@media(max-width:767px){.sidebar{transform:translateX(-100%)}.sidebar.show{transform:none}.main{margin-left:0}}
+.invoice{max-width:820px;margin:20px auto;background:#fff;padding:30px;border:1px solid #ddd}
+.invoice h2{color:var(--purple-dark)}
+@media print{.no-print{display:none!important}body{background:#fff}.invoice{border:0;margin:0;padding:0;max-width:100%}}
