@@ -1,10 +1,10 @@
 
 <?php
 
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "plumbing_bill_shop";
+$host = "sql111.infinityfree.com";
+$username = "if0_43251756";
+$password = "Aditi6122004";
+$database = "if0_43251756_plumbing_bill_shop";
 
 try {
     $pdo = new PDO(
